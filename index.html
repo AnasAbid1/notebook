@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Note-book</title>
+  </head>
+  <style>
+    .title {
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      background-color: grey;
+    }
+    .description {
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      background-color: grey;
+    }
+    body {
+      background-color: grey;
+    }
+    .blackLine {
+      width: 100%;
+      height: 5px;
+      background-color: black;
+    }
+    .cardBox {
+      width: 250px;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div class="title">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        width="50px"
+        height="20px"
+      />
+    </div>
+    <div class="blackLine"></div>
+    <div class="description">
+      <label for="textArea">Description</label>
+      <textarea class="form-control" id="textArea" rows="5"></textarea>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary" onclick="addText()">
+        ADD
+      </button>
+      <button type="button" class="btn btn-primary">DELETE ALL</button>
+    </div>
+    <div>
+      <div class="cardBox">
+        <p id="titlee"></p>
+        <p id="texttt"></p>
+        <div>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+</html>
